@@ -11,4 +11,16 @@ tools:showIn="@layout/activity_main">
         android:id="@+id/image_preview"
         android:layout_width="match_parent" android:layout_height="360dp"
 android:scaleType="centerCrop"/>
+    <com.example.sg772.photoeditortest.Utils.NonSwipableViewPAger
+            android:id="@+id/viewpager"
+            android:layout_above="@+id/tabs"
+            android:layout_below="@id/image_preview"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent" android:layout_height="120dp"></com.example.sg772.photoeditortest.Utils.NonSwipableViewPAger>
+    <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+    android:layout_alignParentBottom="true"></android.support.design.widget.TabLayout>
 </RelativeLayout>
